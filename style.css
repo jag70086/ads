@@ -1,11 +1,121 @@
-.ad1 {
-    width: 100%;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    text-align: center;
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body{
+    background-color: rgb(172, 130, 130);
     justify-content: center;
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+.link-container{
+    top: 150px;
+    height: 40vh;
+    width: 50%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(25, 33, 29, 0.5);
+    opacity: 0;
+    overflow: hidden;
+    word-break: break-all;
     align-items: center;
-    font-size: 16px;
-    font-weight: bold;
+    display:grid;
+}
+.link-container .title{
+    font-size: 25px;
+    top: -12px;
+    position: absolute;
+    left: 261px;
+}
+#hi{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 64, 0);
+    position: absolute;
+    left: 90px;
+    top: 70px;
+}
+.loading-bar-container {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 300px;
+}
+  
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+#loadingMessage{
+    position: absolute;
+    top: 329px;
+    color: #fff;
+}
+#ad1{
+    top: 30px;
+    height: 15vh;
+    width: 50%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(61, 78, 69, 0.5);
+    opacity: 0.6;
+    overflow: hidden;
+}
+#ad2{
+    top: 450px;
+    height: 15vh;
+    width: 50%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(60, 80, 69, 0.5);
+    opacity: 0.6;
+    overflow: hidden;
+}
+#ad3{
+    top: 570px;
+    height: 15vh;
+    width: 50%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(85, 99, 91, 0.5);
+    opacity: 0.6;
+    overflow: hidden;
+}
+#ad4{
+    top: 0px;
+    height: 12vh;
+    width: 23%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(85, 99, 91, 0.5);
+    opacity: 0.6;
+    overflow: hidden;
+    right: 0;
+}
+#ad5{
+    top: 90px;
+    height: 12vh;
+    width: 23%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(85, 99, 91, 0.5);
+    opacity: 0.6;
+    overflow: hidden;
+    right: 0;
 }
