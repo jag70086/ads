@@ -35,18 +35,18 @@ fetch('links.json')
 .then(response => response.json())
 .then(data => {
 data.forEach((ele, i) => {
- let {link1, link2, link3, link4, link5, title} = ele ;
- hmm.href = link1
- hmm.innerText = link1
+ let {drive, mega, fitcher, katfile, other, title} = ele ;
+ hmm.href = drive
+ hmm.innerText = "1. [Google Drive]"
  titl.innerText = title
- hmm1.href = link2
-hmm1.innerText = link2
-hmm2.href = link3
-hmm2.innerText = link3
-hmm3.href = link4
-hmm3.innerText = link4
-hmm4.href = link5
-hmm4.innerText = link5
+ hmm1.href = mega
+hmm1.innerText = "2. [Mega]"
+hmm2.href = fitcher
+hmm2.innerText = "3. [Fitcher]"
+hmm3.href = katfile
+hmm3.innerText = "4. [Katfiles]"
+hmm4.href = other
+hmm4.innerText = "5. [Others]"
 
 
   // Use the data to populate your website content, create links, etc.
