@@ -9,6 +9,8 @@ const loadingMessage = document.getElementById('loadingMessage');
 let load = document.getElementsByClassName('loading-bar-container')[0];
 let links = document.getElementsByClassName('link-container')[0];
 let titl = document.getElementsByClassName('title')[0];
+const urlParams = new URLSearchParams(window.location.search);
+const startValue = urlParams.get('start');
 
 // Function to simulate loading progress
 function simulateLoading() {
@@ -34,8 +36,13 @@ window.onload = simulateLoading;
 fetch('links.json')
 .then(response => response.json())
 .then(data => {
-data.forEach((ele, i) => {
- let {drive, mega, fitcher, katfile, other, title} = ele ;
+
+
+  let series_array = data.filter(ele => {
+    return ele.id == startValue;
+});
+series_array.forEach((elem, i) => {
+ let {drive, mega, fitcher, katfile, other, title} = elem ;
  hmm.href = drive
  hmm.innerText = "1. [Google Drive]"
  titl.innerText = title
